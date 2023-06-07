@@ -1,2 +1,2 @@
 #!/bin/bash
-parent_dir=$(dirname $(pwd)") for file in $(find . -maxdepth 1 -name "*.html" -type f -newer "$parent_dir") do cp "$file" "$parent_dir" done
+rsync -av --ignore-existing --update --include "*.html" --exclude "*" . ../
