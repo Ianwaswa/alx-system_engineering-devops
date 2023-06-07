@@ -1,0 +1,2 @@
+#!/bin/bash
+parent_dir=$(dirname "$(pwd)"); find . -maxdepth 1 -name "*.html" -type f -newer "$parent_dir" | xargs -I {} cp {} "$parent_dir"
