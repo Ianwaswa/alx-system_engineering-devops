@@ -1,2 +1,2 @@
 #!/bin/bash
-cp -u *.html destination
+rsync -av --ignore-existing --update --include '*.html' --exclude '*' /path/to/source_directory/ /path/to/destination_directory/
