@@ -1,0 +1,27 @@
+When you type https://www.google.com into your browser and press Enter, you are initiating a series of complex processes that allow you to access the Google website. In this blog post, we will go through each step of this process, including DNS request, TCP/IP, firewall, HTTPS/SSL, load-balancer, web server, application server, and database.
+
+1. DNS request:
+The first thing that happens when you enter the website address is that your browser sends a Domain Name System (DNS) request to a DNS server. This server is responsible for translating the website's domain name, which is a human-readable address, into an IP address, which is a numerical address that computers use to communicate with each other.
+
+2. TCP/IP:
+Once the DNS server returns the IP address, your browser initiates a Transmission Control Protocol (TCP) connection to that address. TCP is a communication protocol that ensures the reliable delivery of data packets between two devices on the internet. This process also involves the Internet Protocol (IP), which is responsible for routing the data packets to the correct destination.
+
+3. Firewall:
+Before the TCP connection is established, it may pass through a firewall, which is a security system that monitors and controls incoming and outgoing network traffic based on predefined rules. The firewall ensures that only authorized traffic is allowed to enter or leave the network.
+
+4. HTTPS/SSL:
+Once the TCP connection is established, your browser sends a request for the Google website. If the website uses the secure HTTPS protocol, the server will respond with a certificate. This certificate contains a public key that your browser uses to encrypt the data that is sent to the server. This process is known as Secure Sockets Layer (SSL) or Transport Layer Security (TLS).
+
+5. Load-balancer:
+The request may pass through a load-balancer, which is a device that distributes incoming network traffic across multiple servers to improve efficiency and reliability. The load-balancer ensures that the servers are not overloaded and that the website remains accessible even if one server goes down.
+
+6. Web server:
+The request is then passed to a web server, which is a computer that hosts the website and serves web pages to clients. The web server processes the request and returns the requested data, which may include HTML, CSS, JavaScript, images, and other resources.
+
+7. Application server:
+If the website has dynamic content or requires server-side processing, the request may then be passed to an application server. The application server is responsible for executing the application logic and generating the dynamic content. This could include database queries, user authentication, or other custom functionality.
+
+8. Database:
+Finally, if the website requires data storage, the application server may communicate with a database server. The database server stores and retrieves data, such as user profiles, product catalogs, or other application data.
+
+In conclusion, when you type https://www.google.com into your browser and press Enter, you are triggering a complex chain of events that involves multiple systems and protocols working together seamlessly to deliver the requested content. Understanding these steps can help you appreciate the sophistication of the internet and the role that each component plays in delivering a seamless browsing experience.
