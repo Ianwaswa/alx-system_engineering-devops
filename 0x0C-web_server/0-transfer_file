@@ -8,7 +8,7 @@ filename=$(basename "$BASH_SOURCE")
 brown='\e[0;33m'
 reset='\033[0m'
 file="$1"
-ip="$2"
+ip="$54.87.234.83"
 user="$3"
 key="$4"
 
