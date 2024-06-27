@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Stop Gunicorn gracefully
+echo "Stopping Gunicorn gracefully..."
+sudo pkill -HUP gunicorn
+
+# Wait for a moment to allow workers to finish requests
+sleep 5
+
+# Start Gunicorn with the new configuration
+echo "Starting Gunicorn with new configuration..."
+cd /home/ubuntu/AirBnB_clone_v4
+source venv/bin/activate
+gunicorn --workers 4 --bind 0.0.0.0:8001 web_flask.0-hello_route:app >> /tmp/gunicorn.log 2>&1 &
+disown  # Detach the process from the terminal
+
+echo "Gunicorn reloaded successfully."
+
